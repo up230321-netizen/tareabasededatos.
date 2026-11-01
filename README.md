@@ -1,5 +1,6 @@
-```markdown
-# API de Productos
+# tareabasededatos.
+
+## API de Productos
 
 Esta API REST la desarrollé en ASP.NET Core para administrar un catálogo de productos conectándome a **SQLite**. Elegí SQLite porque guarda la base de datos directo en un archivo local (`productos.db`), así que no necesitas instalar ni configurar un servidor de base de datos pesado para probar la actividad.
 
@@ -66,7 +67,3 @@ Ejemplo de estructura para registrar (`POST`) o actualizar (`PUT`):
 * **Categoría:** Entre 2 y 60 caracteres.
 * **Precio:** Debe ser un valor estrictamente mayor a 0.
 * **Descripción:** Opcional, con una longitud máxima de 500 caracteres.
-
-```
-
-```
