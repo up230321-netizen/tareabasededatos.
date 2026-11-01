@@ -1,0 +1,42 @@
+@ProductosApi_HostAddress = http://localhost:5289
+
+GET {{ProductosApi_HostAddress}}/api/productos
+Accept: application/json
+
+###
+
+GET {{ProductosApi_HostAddress}}/api/productos/buscar?texto=papeleria
+Accept: application/json
+
+###
+
+POST {{ProductosApi_HostAddress}}/api/productos
+Content-Type: application/json
+
+{
+  "nombre": "Cuaderno",
+  "descripcion": "Cuaderno de 100 hojas",
+  "precio": 45.5,
+  "categoria": "Papelería"
+}
+
+###
+
+GET {{ProductosApi_HostAddress}}/api/productos/1
+Accept: application/json
+
+###
+
+PUT {{ProductosApi_HostAddress}}/api/productos/1
+Content-Type: application/json
+
+{
+  "nombre": "Cuaderno actualizado",
+  "descripcion": "Cuaderno de 100 hojas",
+  "precio": 50,
+  "categoria": "Papelería"
+}
+
+###
+
+DELETE {{ProductosApi_HostAddress}}/api/productos/1

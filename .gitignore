@@ -1,0 +1,5 @@
+bin/
+obj/
+productos.db
+productos.db-shm
+productos.db-wal
